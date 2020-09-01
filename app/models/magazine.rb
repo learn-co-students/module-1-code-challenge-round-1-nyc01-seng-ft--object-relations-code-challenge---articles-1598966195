@@ -38,10 +38,10 @@ class Magazine
 
   #Returns an array of authors who have written more than 2 articles for the magazine
     ### PSEUDO-CODING ###
-      #to get from magazine to authors - we need to map through article (we have that with def contributors method (articles.map {|article| article.author})
-      #select the authors that have written more than 2 articles
+    # contributors method returns all authors that have written for the magazine
+    # from every author that has written for the magazine, we want to select the ones that have written more than 2 articles
   def contributing_authors
-    contributors.find_all {|article| article.count > 2}
+    contributors.filter {|author| author.article > 2}
   end 
 
 
