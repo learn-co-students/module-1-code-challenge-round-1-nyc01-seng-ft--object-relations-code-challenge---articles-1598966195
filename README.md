@@ -6,7 +6,9 @@ We have three models: `Author`, `Article`, and `Magazine`.
 
 For our purposes, an `Author` has many `Article`s, a `Magazine` has many `Article`s, and `Article`s belong to both `Author` and `Magazine`.
 
+
 `Author` - `Magazine` is a many to many relationship.
+
 
 **Note**: You should draw your domain on paper or on a whiteboard _before you start coding_. Remember to identify a single source of truth for your data.
 
@@ -18,21 +20,45 @@ For our purposes, an `Author` has many `Article`s, a `Magazine` has many `Articl
 - Object Relationships
 - Arrays and Array Methods
 
+
+
+
 ## Instructions
+
 
 To get started, run `bundle install` while inside of this directory.
 
+
+
 Build out all of the methods listed in the deliverables. The methods are listed in a suggested order, but you can feel free to tackle the ones you think are easiest. Be careful: some of the later methods rely on earlier ones.
 
-**Remember!** This code challenge does not have tests. You cannot run `rspec` and you cannot run `learn`. You'll need to create your own sample instances so that you can try out your code on your own. Make sure your associations and methods work in the console before submitting.
+
+
+
+**Remember!** This code challenge does not have tests. You cannot run `rspec` and you cannot run `learn`. 
+
+You'll need to create your own sample instances so that you can try out your code on your own. Make sure your associations and methods work in the console before submitting.
 
 We've provided you with a tool that you can use to test your code. To use it, run `ruby tools/console.rb` from the command line. This will start a `pry` session with your classes defined. You can test out the methods that you write here. You can add code to the `tools/console.rb` file to define variables and create sample instances of your objects.
+
+
+
 
 Writing error-free code is more important than completing all of the deliverables listed - prioritize writing methods that work over writing more methods that don't work. You should test your code in the console as you write.
 
 Similarly, messy code that works is better than clean code that doesn't. First, prioritize getting things working. Then, if there is time at the end, refactor your code to adhere to best practices. Examples of best practices might be to use higher-level array methods such as `map`, `select`, and `find` when appropriate in place of `each`, or, when you encounter duplicated logic, to extract it into a shared helper method.
 
+
+
+
 **Before you submit!** Save and run your code to verify that it works as you expect. If you have any methods that are not working yet, feel free to leave comments describing your progress.
+
+
+
+
+
+
+
 
 ## Deliverables
 
@@ -42,7 +68,10 @@ Deliverables use the notation `#` for instance methods, and `.` for class method
 
 Some of the methods listed are provided to you in the starter code. You should check that they work correctly, and that you understand them.
 
-### Initializers, Readers, and Writers
+
+
+
+<!-- ### Initializers, Readers, and Writers
 
 #### Author
 
@@ -72,9 +101,12 @@ Some of the methods listed are provided to you in the starter code. You should c
 - `Article#title`
   - Returns the title for that given article
 - `Article.all`
-  - Returns an array of all Article instances
+  - Returns an array of all Article instances -->
 
-### Object Relationship Methods
+
+
+
+<!-- ### Object Relationship Methods
 
 #### Article
 
@@ -93,7 +125,10 @@ Some of the methods listed are provided to you in the starter code. You should c
 #### Magazine
 
 - `Magazine#contributors`
-  - Returns an array of Author instances who have written for this magazine
+  - Returns an array of Author instances who have written for this magazine -->
+
+
+
 
 ### Associations and Aggregate Methods
 
@@ -112,6 +147,9 @@ Some of the methods listed are provided to you in the starter code. You should c
   - Returns an array strings of the titles of all articles written for that magazine
 - `Magazine#contributing_authors`
   - Returns an array of authors who have written more than 2 articles for the magazine
+
+
+
 
 ## Rubric
 

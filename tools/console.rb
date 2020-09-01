@@ -9,7 +9,10 @@ end
 
 
 
+billybob = Author.new("BILLEYBOHWB BOHWJAYNGULZ")
 
+
+hunting_magazine = Magazine.new("HUNT'N", "Category: HUNT'N")
 
 
 
