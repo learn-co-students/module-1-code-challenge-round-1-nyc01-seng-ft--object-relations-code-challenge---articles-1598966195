@@ -23,6 +23,7 @@ promote = Article.new(dwight, scranton, "promote")
 
 
 
+
 ### DO NOT REMOVE THIS
 binding.pry
 
