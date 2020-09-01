@@ -11,6 +11,8 @@ class Magazine
   end
 
   # contributors should return array of author instances who wrote for this magazine
+  def contributors
+  end
 
   # class method find by name should return the FIRST magazine object that matches
 
