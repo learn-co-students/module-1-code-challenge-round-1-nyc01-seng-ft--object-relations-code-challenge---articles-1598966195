@@ -1,19 +1,21 @@
 class Magazine
+  
   attr_accessor :name, :category
+  #   - The name and category of the magazine **can be** changed after being initialized.
 
   @@all = []
-  #   - A magazine is initialized with a name as a string and a category as a string
-  #   - The name and category of the magazine **can be** changed after being initialized.
-  # - `Magazine#name`
-  # - `Magazine#category`
 
+  #   - A magazine is initialized with a name as a string and a category as a string
   def initialize(name, category)
+    # - `Magazine#name`
+    # - `Magazine#category`
     @name = name
     @category = category
     @@all << self
   end
 
   def self.all
+    # returns array of magazines
     @@all
   end
 
@@ -28,12 +30,12 @@ class Magazine
   end
 
   def self.find_by_name(name)
-    #   - Given a string of magazine's name, this method returns the first magazine object that matches
+    # - Given a string of magazine's name, this method returns the first magazine object that matches
     self.all.find {|magazine| magazine.name == name}
   end
 
   def article_titles
-    #   - Returns an array strings of the titles of all articles written for that magazine
+    # - Returns an array strings of the titles of all articles written for that magazine
     Article.all.select {|article| article.magazine == self}.map {|article| article.title}
   end
 
