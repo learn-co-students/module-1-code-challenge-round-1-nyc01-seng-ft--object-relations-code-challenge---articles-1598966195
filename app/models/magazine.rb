@@ -18,11 +18,21 @@ class Magazine
   end
 
   def magazine_category
-   Magazine.all.select {|categ| categ == self }
+   Magazine.all.select {|category| Magazine.category == self }
   end
 
   def magazine.all
-  Magazine.all.map{&:yield}
+  Magazine.all.map[&:yield]
+  end
+
+  def self.find_by_name
+    Self.all.sort {|name| if name.first[&:yield] }  #find?
+  end
+
+  def self.article_titles
+    Article_magazine = 0
+    {|article| if Article_magazine == Article.magazine do 
+      Article.magazine += magazine.all }
   end
 
 end

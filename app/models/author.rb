@@ -25,7 +25,18 @@ class Author
   end
 
   def self.magazine_contributor
-    Author.magazine.all.select {|name| 
+    Author.magazine.all.select {|name| Author.name if Author.magazine }.uniq
+  end
+
+  def self.add_article(magazine, title)
+    {Author.magazine.title.}.new
+
+    def self.topic_areas
+ #     if magazine_category
+ #       Magazine.all.select {|categ| categ == self }
+       end
+     
+    end
   end
 
 end
