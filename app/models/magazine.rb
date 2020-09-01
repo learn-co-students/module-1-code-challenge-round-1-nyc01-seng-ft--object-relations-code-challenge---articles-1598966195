@@ -18,7 +18,10 @@ class Magazine
 
   def contributors
     Article.all.select { |author| author.magazine == self}
+  end
 
+  def self.find_by_name(name)
+    all.find 
   end
 
 

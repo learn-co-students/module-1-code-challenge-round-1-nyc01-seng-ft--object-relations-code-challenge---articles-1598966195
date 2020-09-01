@@ -92,17 +92,17 @@ Some of the methods listed are provided to you in the starter code. You should c
 
 #### Magazine
 
-- `Magazine#contributors`
-  - Returns an array of Author instances who have written for this magazine
+<!-- - `Magazine#contributors`
+  - Returns an array of Author instances who have written for this magazine -->
 
 ### Associations and Aggregate Methods
 
 #### Author
 
-- `Author#add_article(magazine, title)`
-  - Given a magazine (as Magazine instance) and a title (as a string), creates a new Article instance and associates it with that author and that magazine.
-- `Author#topic_areas`
-  - Returns a **unique** array of strings with the categories of the magazines the author has contributed to
+<!-- - `Author#add_article(magazine, title)`
+  - Given a magazine (as Magazine instance) and a title (as a string), creates a new Article instance and associates it with that author and that magazine. -->
+<!-- - `Author#topic_areas`
+  - Returns a **unique** array of strings with the categories of the magazines the author has contributed to -->
 
 #### Magazine
 

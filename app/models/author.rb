@@ -27,6 +27,11 @@ class Author
     Article.new(self, magazine, title)
   end
 
+  def topic_areas
+    magazines.map { |article| article.category }
+
+  end
+
   
 
 end
