@@ -14,5 +14,9 @@ class Magazine
     @@all
   end 
 
+  def contributors
+    Article.all.select {|con|con.magazine == self}
+  end 
+
 
 end

@@ -15,7 +15,14 @@ class Author
   end 
 
   def articles
-    Articles.all.select { |art| art.author == self }
+    Article.all.select {|art| art.author == self }
+  end 
+
+  def magazines
+    articles.map {|auth| auth.magazine}.uniq
+  end 
+
+  def add_article
   end 
 
 
