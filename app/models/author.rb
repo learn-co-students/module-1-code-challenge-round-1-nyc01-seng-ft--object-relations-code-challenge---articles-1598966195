@@ -23,21 +23,28 @@
   
   class Author
         attr_reader   :name
-        attr_accessor :
+        #attr_accessor :articles
+
+        #@@articles = [ ]
+
         @@all = [ ]
 
 
-        def initialize(name)
+        def initialize(name) #, articles=[ nil ])
             @name = name.to_s
 
-            @@all << self 
+            #@@articles << articles
+            @@all      << self 
         end
         def self.all
             @@all    end
 
+        # def articles.all
+        #     @@articles    end
 
-        # def  name
-        #      self.name  end 
+
+        def  self.articles
+             all.map { |author| article.author == self.name }  end 
 
 
         
