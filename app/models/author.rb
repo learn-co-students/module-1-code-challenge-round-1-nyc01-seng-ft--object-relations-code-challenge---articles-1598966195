@@ -14,8 +14,12 @@ class Author
     self.articles.map { |articles| articles.magazine }.uniq
   end
 
-  def add_article
-    
+  def add_article(magazine, title)
+    Article.new(self, magazine, title)
+  end
+
+  def topic_areas
+    self.magazines.map { |mags| mags.category }
   end
 
 end
