@@ -12,18 +12,20 @@ steven_king = Author.new("Steven King")
 betty_jones = Author.new("Betty Jones")
 daniel_mcdaniels = Author.new("Daniel McDaniels")
 
-fancy_pets = Magazine.new("Fancy Pets", "Lifestyle")
+fancy_pets  = Magazine.new("Fancy Pets", "Lifestyle")
 galoshes_galore = Magazine.new("Galoshes Galore", "Clothing")
-bold_bald = Magazine.new("Bold & Bald", "Lifestyle")
+bold_bald   = Magazine.new("Bold & Bald", "Lifestyle")
 socks_stuff = Magazine.new("Socks n' Stuff", "Clothing")
+galoshes_galore_test = Magazine.new("Galoshes Galore", "This should not be returned")
 
 mm_cathouse = Article.new(betty_jones, fancy_pets, "Million Dollar Cat Houses")
-toe_socks = Article.new(daniel_mcdaniels, socks_stuff, "5 Must Own Toe Socks")
+toe_socks   = Article.new(daniel_mcdaniels, socks_stuff, "5 Must Own Toe Socks")
 scary_boots = Article.new(steven_king, galoshes_galore, "Terrifying Fashion Trends")
 scary_kitty = Article.new(steven_king, fancy_pets, "My Cat's Style is So Good It's Scary!")
 bald_mullet = Article.new(daniel_mcdaniels, bold_bald, "Bald Up Top, Party in the Back")
 scary_puppy = Article.new(steven_king, fancy_pets, "Most Frightening Halloween Costumes for Your Pup")
-
+no_socks = Article.new(daniel_mcdaniels, socks_stuff, "How to Ditch Your Sock Habit")
+how_to = Article.new(daniel_mcdaniels, socks_stuff, "The Complete Guide to Properly Putting Socks on Your Feet")
 
 
 ### DO NOT REMOVE THIS
