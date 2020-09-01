@@ -1,7 +1,6 @@
 class Author
   attr_reader :name
 
-
   def initialize(name)
     @name = name
   end
@@ -19,7 +18,7 @@ class Author
   end 
 
   def topic_areas
-    
+    self.magazines.map {|mag| mag.category}.uniq
   end 
-
+  #confirmed .uniq goes on end 
 end
