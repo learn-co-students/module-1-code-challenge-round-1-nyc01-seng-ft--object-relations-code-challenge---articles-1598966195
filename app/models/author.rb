@@ -17,32 +17,33 @@ class Author
 
   def articles
     # - Returns an array of Article instances the author has written
+    # p "Hi, #{self.name}, here are all of your articles:"
     Article.all.select {|article| article.author == self}
   end
 
   def magazines
     # - Returns a **unique** array of Magazine instances for which the author has contributed to
-    p "Hi, #{self.name}, here are all of the magazines you have contributed to:"
+    # p "Hi, #{self.name}, here are all of the magazines you have contributed to:"
     self.articles.map {|article| article.magazine}.uniq
   end
 
     def magazine_articles(magazine)
     # - Returns a **unique** array of Magazine instances for which the author has contributed to
-    p "Hi, #{self.name}, here are all of the articles you have submitted to #{magazine}:"
+    # p "Hi, #{self.name}, here are all of the articles you have submitted to #{magazine}:"
     self.articles.select {|article| article.magazine == magazine}.count
   end
 
   def add_article(magazine, title)
     # - Given a magazine (as Magazine instance) and a title (as a string), 
     # creates a new Article instance and associates it with that author and that magazine.
-    p "#{self.name}, wrote a new article called, #{title}, for #{magazine} magazine."
+    # p "#{self.name}, wrote a new article called, #{title}, for #{magazine} magazine."
     Article.new(self, magazine, title)
   end
   
   def topic_areas
     # - Returns a **unique** array of strings with the categories of the 
     # magazines the author has contributed to
-    p "Hi, #{self.name}, here are all of the catagories you have contributed to:"
+    # p "Hi, #{self.name}, here are all of the catagories you have contributed to:"
     self.magazines.map {|article| article.category}.uniq
   end
 
