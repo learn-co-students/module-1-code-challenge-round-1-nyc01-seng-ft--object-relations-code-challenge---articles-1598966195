@@ -1,5 +1,5 @@
 class Author
-  attr_accessor :name
+  attr_reader :name
 
   def initialize(name)
     @name = name
@@ -13,6 +13,7 @@ class Author
   #articles method should return array of article instances for author
 
   # magazines method should return a unique array of Mags instances author has contributed
+def magazine
 
   # add article method is given two args which will create a new article
 

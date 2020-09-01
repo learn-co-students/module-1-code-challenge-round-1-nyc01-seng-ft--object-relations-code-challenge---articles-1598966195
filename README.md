@@ -66,22 +66,22 @@ Some of the methods listed are provided to you in the starter code. You should c
 
 #### Article
 
-- `Article#initialize(author, magazine, title)`
+<!-- - `Article#initialize(author, magazine, title)`
   - An article is initialized with an author as an Author object, a magazine as a Magazine object, and title as a string.
   - An article **cannot** change its author, magazine, or title after it is has been initialized.
 - `Article#title`
   - Returns the title for that given article
 - `Article.all`
-  - Returns an array of all Article instances
+  - Returns an array of all Article instances -->
 
 ### Object Relationship Methods
 
 #### Article
 
-- `Article#author`
+<!-- - `Article#author`
   - Returns the author for that given article
 - `Article#magazine`
-  - Returns the magazine for that given article
+  - Returns the magazine for that given article -->
 
 #### Author
 
