@@ -1,3 +1,5 @@
+require "pry"
+
 class Magazine
   attr_accessor :name, :category
   @@all = []
@@ -36,12 +38,13 @@ class Magazine
     array.each do |contributor|
       if !hash[contributor]
         hash[contributor] = 1
+        binding.pry
       else
         hash[contributor] += 1
       end
     end
-    hash.each|key, value|
-      if value >2
+    hash.each do |key, value|
+      if value > 2
         authors << key
       end
     end
