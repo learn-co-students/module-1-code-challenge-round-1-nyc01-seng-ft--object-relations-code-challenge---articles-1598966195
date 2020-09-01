@@ -17,15 +17,19 @@ class Magazine
     self.all.find{|mag| mag.name == name}
   end
 
+  def articles
+    Article.all.select{|article| article.magazine == self}
+  end
+
   def article_titles
 
   end
 
   def contributors
-    Article.all.select{|article| article.author == self}
+    self.articles.map{|a| a.author}
   end
   
   def contributing_authors
-
+    self.contributors.map{}
   end
 end

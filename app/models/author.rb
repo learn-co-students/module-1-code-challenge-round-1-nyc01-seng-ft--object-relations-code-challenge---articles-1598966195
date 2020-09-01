@@ -17,19 +17,16 @@ class Author
   end
 
   def magazines
-    articles.map{|magazine| magazine.author}.uniq
+    self.articles.map{|m| m.magazine}
   end
   
-  def contributors
-    Article.all.select{|article| magazine.author == self}
-  end
   
   def add_article(magazine, title)
     Article.new(self, magazine, title)
   end
 
   def topic_areas
-    
+    self.articles.map{|a| a.magazine}
   end
 
 end
