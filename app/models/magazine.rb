@@ -29,9 +29,15 @@ class Magazine
   def article_titles
     articles.map { |at| at.title}
   end
+
+  def total_articles
+    total = 0
+    articles.each { |art| total += article.author}
+    return total
+  end
   
   def contributing_authors
-     articles.map { |art| art.author.name > 2}
+     articles.map { |art| art.author > 2}
   end
 
 end
