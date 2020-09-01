@@ -15,6 +15,15 @@
 # - `Magazine#contributors`
 #   - Returns an array of Author instances who have written for this magazine
 
+# #### Magazine
+
+# - `Magazine.find_by_name(name)`
+#   - Given a string of magazine's name, this method returns the first magazine object that matches
+# - `Magazine#article_titles`
+#   - Returns an array strings of the titles of all articles written for that magazine ????
+# - `Magazine#contributing_authors`
+#   - Returns an array of authors who have written more than 2 articles for the magazine
+
 class Magazine
   attr_accessor :name, :category
 
@@ -42,5 +51,13 @@ class Magazine
     self.articles.map { |article| article.author }.uniq
   end
 
+  #I'm assuming the 'name' argument needs to match exactly (case-sensitive)
+  def self.find_by_name(name)
+    self.all.find { |mag| mag.name == name }
+  end
+
+  def article_titles
+    self.articles.map { |article| article.title }
+  end
 
 end
