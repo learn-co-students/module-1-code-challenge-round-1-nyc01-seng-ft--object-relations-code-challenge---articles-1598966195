@@ -30,7 +30,13 @@ class Magazine
   end
 
   def contributing_authors
-    self.contributors.detect{|author| self.contributors.count(author) > 2}
+    contributors= []
+    self.contributors.each do |author|
+      if self.contributors.count(author) > 2
+        contributors << author
+      end
+    end
+    contributors.uniq
   end
 
 
