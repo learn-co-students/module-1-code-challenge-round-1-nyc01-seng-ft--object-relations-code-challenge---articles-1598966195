@@ -1,5 +1,7 @@
 # Object Relations Code Challenge - Articles
 
+***~~~ G A B R I E L H I C K S ~~~***
+
 For this assignment, you will be working with a Magazine domain.
 
 We have three models: `Author`, `Article`, and `Magazine`.
