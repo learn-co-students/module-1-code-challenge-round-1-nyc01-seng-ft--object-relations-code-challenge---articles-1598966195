@@ -18,5 +18,11 @@ class Magazine
     Article.all.select {|con|con.magazine == self}
   end 
 
+  def self.find_by_name(name)
+
+  end 
+
+  
+
 
 end

@@ -27,7 +27,7 @@ class Author
   end 
 
   def topic_areas
-    articles.map {|art|art.title}
+    articles.map {|art|art.magazine}.uniq #should return the magazine that the author wrote  
 
   end 
 
