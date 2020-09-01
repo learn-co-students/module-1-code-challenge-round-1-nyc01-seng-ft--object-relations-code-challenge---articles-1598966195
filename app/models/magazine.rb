@@ -21,7 +21,7 @@ class Magazine
   end
 
   def self.find_by_name(name)
-
+    self.all.find {|name| name.magazine == self}
   end
 
   def article_titles
