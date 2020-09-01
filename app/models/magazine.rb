@@ -29,6 +29,9 @@ class Magazine
   def article_titles
     articles.map { |at| at.title}
   end
-
+  
+  def contributing_authors
+     articles.map { |art| art.author.name > 2}
+  end
 
 end

@@ -21,8 +21,12 @@ mag5 = Magazine.new("TIMES", "News")
 art1 = Article.new(author1, mag1, "Gucci")
 art2 = Article.new(author2, mag2, "NBA")
 art3 = Article.new(author1, mag1, "Fendi")
-art4 = Article.new(author3, mag3, "Unhealthy Foods")
+art4 = Article.new(author3, mag1, "Unhealthy Foods")
 art5 = Article.new(author3, mag5, "Trump")
+art6 = Article.new(author1, mag1, "Tommy H.")
+art7 = Article.new(author4, mag1, "MCM")
+art8 = Article.new(author4, mag1, "LV")
+art3 = Article.new(author4, mag1, "Old Navy")
 
 
 
