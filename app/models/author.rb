@@ -24,4 +24,8 @@ class Author
     self.magazines.map { |mag| mag.category }.uniq
   end  
 
+def articles_for(sought_magazine)
+  self.articles.select { |article| article.magazine == sought_magazine }
+end  
+
 end

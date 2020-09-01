@@ -28,12 +28,11 @@ class Magazine
   end  
 
   def contributors
-    self.articles.map { |articles| article.author }.uniq
+    self.articles.map { |article| article.author }.uniq
   end  
 
-  def contributing_authors
-    #
+  def contributoring_authors
+    self.article.map 
   end  
-
 
 end
