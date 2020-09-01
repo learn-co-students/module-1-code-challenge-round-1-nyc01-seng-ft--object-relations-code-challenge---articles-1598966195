@@ -17,15 +17,15 @@ class Author
   end
 
   def magazines
-    articles.filter { |article| article.magazine }.uniq
+    self.articles.filter { |article| article.magazine }.uniq
   end
 
   def add_article(magazine, title)
     Article.new(self, magazine, title)
   end
 
-  def topic_areas
-    magazines.filter { |topic| topic.category}.uniq
+  def topic_areas #not working
+    self.magazines.map { |topic| topic.category}.uniq
   end
 
 
