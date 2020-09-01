@@ -38,7 +38,6 @@ class Magazine
     array.each do |contributor|
       if !hash[contributor]
         hash[contributor] = 1
-        binding.pry
       else
         hash[contributor] += 1
       end
