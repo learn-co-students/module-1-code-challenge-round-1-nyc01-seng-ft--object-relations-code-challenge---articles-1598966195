@@ -15,7 +15,19 @@ class Author
   end
   
   def magazines
-    Magazine.all.select.uniq {|magazine| magazine.author == self}
+    Article.all.select {|magazine| magazine.author}
+    #have to add .uniq
   end
+
+  def add_article(magazine,title)
+    #add
+  end
+
+  def topic_areas
+    #will require a .uniq 
+    #simialar to the article/magazine methods above.
+    #utlize magazine method and go down to categories.
+  end
+
 
 end

@@ -13,7 +13,15 @@ class Magazine
   end
 
   def contributors
-    Author.all.select { |author| author.name}
+    Article.all.select {|article| article.author}
   end
-  
+
+  def self.find_by_name(name)
+  end
+
+  def article_titles
+  end
+
+  def article_titles
+  end
 end
