@@ -52,12 +52,13 @@ class Magazine
     a =[]
     Author.all.each do |author|
       count = 0
-
+     
       articles.each do |art|
-        if art.author == author
+        if art.author.name == author.name
           count +=1
         end
       end
+      
       if count > 2 
         a << author
       end
@@ -65,9 +66,10 @@ class Magazine
     a = a.uniq
     a
   end
+end
   
 
-end
+
 
 
 
