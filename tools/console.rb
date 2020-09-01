@@ -5,7 +5,9 @@ def reload
 end
 
 
-###  WRITE YOUR TEST CODE HERE ###
+author1 = Author.new('john')
+mag1 = Magazine.new('the best','sport')
+article = Article.new(author1, mag1, 'good players')
 
 
 
@@ -18,4 +20,4 @@ end
 ### DO NOT REMOVE THIS
 binding.pry
 
-0
+
