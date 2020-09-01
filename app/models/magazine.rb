@@ -18,6 +18,16 @@ class Magazine
     @@all
   end
 
+  def contributors
+    Article.all.select {|article| article.author.name}
+  
+  end
+
+  def self.find_by_name(name)
+    
+  
+  end
+
 
 
 

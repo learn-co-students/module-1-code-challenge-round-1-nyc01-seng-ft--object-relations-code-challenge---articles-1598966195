@@ -9,7 +9,7 @@ end
 
 
 
-
+author2 = Author.new("emily dickinson")
 author1 = Author.new("stephen king")
 magazine1 = Magazine.new("Harper's", "Pulp")
 magazine2 = Magazine.new("RD", "Tabloid")

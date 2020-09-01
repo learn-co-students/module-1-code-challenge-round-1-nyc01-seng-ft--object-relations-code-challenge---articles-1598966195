@@ -66,43 +66,43 @@ Some of the methods listed are provided to you in the starter code. You should c
 
 #### Article
 
-- `Article#initialize(author, magazine, title)`
-  - An article is initialized with an author as an Author object, a magazine as a Magazine object, and title as a string.
-  - An article **cannot** change its author, magazine, or title after it is has been initialized.
-- `Article#title`
-  - Returns the title for that given article
-- `Article.all`
-  - Returns an array of all Article instances
+<!-- - `Article#initialize(author, magazine, title)`
+  - An article is initialized with an author as an Author object, a magazine as a Magazine object, and title as a string. -->
+  <!-- - An article **cannot** change its author, magazine, or title after it is has been initialized. -->
+<!-- - `Article#title`
+  - Returns the title for that given article -->
+<!-- - `Article.all`
+  - Returns an array of all Article instances -->
 
 ### Object Relationship Methods
 
 #### Article
 
-- `Article#author`
-  - Returns the author for that given article
-- `Article#magazine`
-  - Returns the magazine for that given article
+<!-- - `Article#author`
+  - Returns the author for that given article -->
+<!-- - `Article#magazine`
+  - Returns the magazine for that given article -->
 
 #### Author
 
-- `Author#articles`
-  - Returns an array of Article instances the author has written
-- `Author#magazines`
-  - Returns a **unique** array of Magazine instances for which the author has contributed to
+<!-- - Author#articles`
+  - Returns an ar`ray of Article instances the author has written
+<!-- - `Author#magazines` --> -->
+  <!-- - Returns a **unique** array of Magazine instances for which the author has contributed to --> COME BACK TO THIS
 
 #### Magazine
 
-- `Magazine#contributors`
-  - Returns an array of Author instances who have written for this magazine
+<!-- - `Magazine#contributors`
+  - Returns an array of Author instances who have written for this magazine -->
 
 ### Associations and Aggregate Methods
 
 #### Author
 
-- `Author#add_article(magazine, title)`
-  - Given a magazine (as Magazine instance) and a title (as a string), creates a new Article instance and associates it with that author and that magazine.
-- `Author#topic_areas`
-  - Returns a **unique** array of strings with the categories of the magazines the author has contributed to
+<!-- - `Author#add_article(magazine, title)`
+  - Given a magazine (as Magazine instance) and a title (as a string), creates a new Article instance and associates it with that author and that magazine. -->
+<!-- - `Author#topic_areas`
+  - Returns a **unique** array of strings with the categories of the magazines the author has contributed to -->
 
 #### Magazine
 
