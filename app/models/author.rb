@@ -26,7 +26,13 @@ class Author
 
   def initialize(name)
     @name = name
-  
+    @@all << self
+  end
+
+  @@all = []
+
+  def self.all
+    @@all
   end
 
   def articles
@@ -43,6 +49,11 @@ class Author
 
   def topic_areas
     self.magazines.map { |mag| mag.category }.uniq
+  end
+
+  #helper method - counts number of articles an auhor has contributed to given magazine
+  def article_count(mag)
+    self.articles.select { |article| article.magazine == mag }.count
   end
 
 

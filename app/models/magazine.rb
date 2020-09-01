@@ -51,13 +51,18 @@ class Magazine
     self.articles.map { |article| article.author }.uniq
   end
 
-  #I'm assuming the 'name' argument needs to match exactly (case-sensitive)
+  #I'm assuming the 'name' argument needs to match the full magazine title exactly (case-sensitive)
   def self.find_by_name(name)
     self.all.find { |mag| mag.name == name }
   end
 
   def article_titles
     self.articles.map { |article| article.title }
+  end
+
+  #uses article_count method defined in Author class
+  def contributing_authors
+    Author.all.select { |author| author.article_count(self) > 2 }
   end
 
 end
