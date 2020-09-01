@@ -1,4 +1,4 @@
-# #### Article
+# #### Article - done
 
 # - `Article#initialize(author, magazine, title)`
 #   - An article is initialized with an author as an Author object, a magazine as a Magazine object, and title as a string.
@@ -8,7 +8,7 @@
 # - `Article.all`
 #   - Returns an array of all Article instances
 
-#### Article
+#### Article - done
 
 # - `Article#author`
 #   - Returns the author for that given article

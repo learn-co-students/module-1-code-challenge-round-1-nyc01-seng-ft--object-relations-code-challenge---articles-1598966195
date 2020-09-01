@@ -22,7 +22,8 @@ cosmo = Magazine.new("Cosmo", "Fun")
 tips = Article.new(jess, dd, "DD Tips")
 dolls = Article.new(rach, ag, "Doll Names")
 love = Article.new(jess, cosmo, "Love Stuff")
-
+boyz = Article.new(jess, cosmo, "Boyyzzzz")
+life = Article.new(rach, cosmo, "Life")
 
 
 

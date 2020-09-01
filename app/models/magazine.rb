@@ -1,3 +1,4 @@
+# Done
 # - `Magazine#initialize(name, category)`
 #   - A magazine is initialized with a name as a string and a category as a string
 #   - The name and category of the magazine **can be** changed after being initialized.
@@ -9,7 +10,7 @@
 #   - Returns an array of all Magazine instances
 
 
-# #### Magazine
+# #### Magazine- done
 
 # - `Magazine#contributors`
 #   - Returns an array of Author instances who have written for this magazine
@@ -29,6 +30,16 @@ class Magazine
 
   def self.all
     @@all
+  end
+
+  #helper method 
+  def articles
+    Article.all.select { |article| article.magazine == self }
+  end
+
+  #Not specified but I'm assuming you want a unique list
+  def contributors
+    self.articles.map { |article| article.author }.uniq
   end
 
 
