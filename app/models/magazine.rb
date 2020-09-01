@@ -17,20 +17,30 @@ class Magazine
     @@all
   end
 
-  def contributors
+  def all_contributions
     # Returns an array of Author instances who have written for this magazine
+    Article.all.select {|article| article.magazine == self}.map {|article| article.author}
   end
 
-  self.find_by_name(name)
-  #   - Given a string of magazine's name, this method returns the first magazine object that matches
+  def contributors
+    # Returns an array of Author instances who have written for this magazine
+    Article.all.select {|article| article.magazine == self}.map {|article| article.author}.uniq
+  end
+
+  def self.find_by_name(name)
+    #   - Given a string of magazine's name, this method returns the first magazine object that matches
+    self.all.find {|magazine| magazine.name == name}
   end
 
   def article_titles
     #   - Returns an array strings of the titles of all articles written for that magazine
+    Article.all.select {|article| article.magazine == self}.map {|article| article.title}
   end
 
   def contributing_authors
     #   - Returns an array of authors who have written more than 2 articles for the magazine
+    author = self.all_contributions
+    author.filter {|author| author.magazine_articles(self) > 2}.uniq
   end
 
 end
