@@ -13,6 +13,8 @@ steve = Author.new("Steve")
 sci_fi = Magazine.new("Science-Fic", "Fiction")
 animals = Magazine.new("Hungry animals", "Educational")
 
+test_mag = Magazine.new("Food", "Health")
+
 test_art = Article.new(john, animals, "Art check")
 art1 = Article.new(steve, sci_fi, "The one Art")
 
