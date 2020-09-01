@@ -32,7 +32,7 @@ class Magazine
   end  
 
   def contributoring_authors
-    self.article.map 
+    self.article.map #not done
   end  
 
 end
