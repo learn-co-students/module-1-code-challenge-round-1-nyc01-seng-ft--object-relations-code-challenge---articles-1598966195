@@ -50,17 +50,20 @@ class Magazine
     #Not sure how to get the amount of instances in Article.all where an author appears 
 
     # contributors = Article.all.select{|article| article.author.name}
-    
+    final_array = []
     contributors = []
     Article.all.each do |ele|
-      if ele.author.name > 2
+      if ele.author.name 
         contributors << ele
+        if contributors[ele].count > 2
+          final_array << ele
+        end
       end
     end
         
 
 
-      
+    p final_array
 
     
   
