@@ -15,5 +15,21 @@ class Magazine
     @@all
   end
 
+  def contributors
+    #Returns an array of Author instances who have written for this magazine
+    self.all.map do {|author| author.magazine == self}
+  end
+
+  def self.find_by_name(name)
+
+  end
+
+  def article_titles
+
+  end
+
+  def contributing_authors
+
+  end
 
 end

@@ -30,5 +30,9 @@ class Article
         Article.all.select {|author| author.article == self}
     end
 
+    def magazine
+        #Returns the magazine for that given article
+        Article.all.select {|magazine| magazine.article == self}
+    end
 
 end
