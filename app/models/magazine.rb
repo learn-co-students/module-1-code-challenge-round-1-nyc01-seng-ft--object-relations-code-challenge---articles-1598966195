@@ -25,8 +25,17 @@ class Magazine
   end
 
   def contributing_authors
-    catalog = articles.map{|article|article.author}
-    
+    catalog = []
+    count = 0
+    articles.map do |article|
+      article.author
+      count += 1 
+    if count > 1
+      catalog << article.author
+    else nil
+    end
+  end
+    catalog
   end
 
   def self.find_by_name(name)

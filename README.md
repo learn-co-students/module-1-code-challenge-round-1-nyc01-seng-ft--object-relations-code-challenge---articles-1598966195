@@ -113,7 +113,7 @@ Some of the methods listed are provided to you in the starter code. You should c
 - `Magazine#article_titles` **done
   - Returns an array strings of the titles of all articles written for that magazine **done
 - `Magazine#contributing_authors`
-  - Returns an array of authors who have written more than 2 articles for the magazine
+  - Returns an array of authors who have written more than 2 articles for the magazine **done and holy crap did this fry my noodle.
 
 ## Rubric
 
