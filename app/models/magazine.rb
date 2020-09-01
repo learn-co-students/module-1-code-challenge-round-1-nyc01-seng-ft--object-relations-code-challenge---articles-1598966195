@@ -25,11 +25,11 @@ class Magazine
   end
 
   def article_titles
-
+    self.all.map do {|title| title.article.magazine == self}
   end
 
   def contributing_authors
-
+    if self.all.map {|author| author.article}
   end
 
 end
