@@ -13,5 +13,10 @@ class Magazine
     @@all
   end
 
+  def contributors
+    articles = Article.all.select {|art| art.magazine == self}
+    articles.map {|art| art.author} #doesn't specify unique
+  end
+
 
 end

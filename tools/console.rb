@@ -22,6 +22,7 @@ toe_socks = Article.new(daniel_mcdaniels, socks_stuff, "5 Must Own Toe Socks")
 scary_boots = Article.new(steven_king, galoshes_galore, "Terrifying Fashion Trends")
 scary_kitty = Article.new(steven_king, fancy_pets, "My Cat's Style is So Good It's Scary!")
 bald_mullet = Article.new(daniel_mcdaniels, bold_bald, "Bald Up Top, Party in the Back")
+scary_puppy = Article.new(steven_king, fancy_pets, "Most Frightening Halloween Costumes for Your Pup")
 
 
 
