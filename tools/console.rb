@@ -21,6 +21,7 @@ tttt = Article.new(ravver, crackmag, "Top Twenty Twenty Twenty")
 wawd = Article.new(ciel, truants, "Why We Aren't Dancing")
 gftl = Article.new(scavens, donut, "Go Fast Turn Left")
 nta = Article.new(ciel, truants, "Not This Again..")
+omg = Article.new(ravver, truants, "Oh My Gosh")
 
 
 

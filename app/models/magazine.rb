@@ -17,7 +17,7 @@ class Magazine
   end
 
   def contributors
-    articles.map{|article|article.author}.uniq
+    articles.map{|article|article.author}    ##had uniq here and realized that the readme did not specify this, and it would help me with contributing authors to not have it here
   end
 
   def article_titles
@@ -25,17 +25,7 @@ class Magazine
   end
 
   def contributing_authors
-    catalog = []
-    count = 0
-    articles.map do |article|
-      article.author
-      count += 1 
-    if count > 1
-      catalog << article.author
-    else nil
-    end
-  end
-    catalog
+    contributors.select{ |cont| contributors.count(cont) > 1 }.uniq
   end
 
   def self.find_by_name(name)
