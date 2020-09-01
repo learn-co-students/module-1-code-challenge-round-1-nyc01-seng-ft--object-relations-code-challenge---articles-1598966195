@@ -22,7 +22,13 @@ class Author
     articles.map {|auth| auth.magazine}.uniq
   end 
 
-  def add_article
+  def add_article(magazine, title)    #expect to return article instance associated with author and magazine
+    Magazine.new(self,magazine)
+  end 
+
+  def topic_areas
+    articles.map {|art|art.title}
+
   end 
 
 
