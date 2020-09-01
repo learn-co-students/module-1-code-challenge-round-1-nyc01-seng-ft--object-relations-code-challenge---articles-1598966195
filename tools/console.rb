@@ -18,7 +18,7 @@ article1 = Article.new(author1, magazine1, "beatniks are cool")
 article2 = Article.new(author2, magazine2, "fries are the best")
 article3 = Article.new(author1, magazine2, "pizza is king")
 article4 = Article.new(author2, magazine1, "i love vans")
-
+article5 = Article.new(author1, magazine1, "tshirts are awesome")
 
 ### DO NOT REMOVE THIS
 binding.pry
