@@ -29,7 +29,7 @@ class Author
     end
   
     def articles
-        Article.all.select{|article| article.author == self}
+      Article.all.select{|article| article.author == self}
     end
   
     def magazines
@@ -45,6 +45,7 @@ class Author
     end
   end
 
+  
   class Magazine
     attr_accessor :name, :category
   
@@ -77,9 +78,16 @@ class Author
     end
   
     def contributing_authors
-      self.contributors.detect{|author| self.contributors.count(author) > 2}
+      contributors= []
+      self.contributors.each do |author|
+        if self.contributors.count(author) > 2
+          contributors << author
+        end
+      end
+      contributors.uniq
     end
   
   
   end
+  
 
