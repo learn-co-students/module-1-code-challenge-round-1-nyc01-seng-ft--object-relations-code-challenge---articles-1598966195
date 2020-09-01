@@ -26,13 +26,19 @@ class Magazine
   end
 
   def self.find_by_name
-    Self.all.sort {|name| if name.first[&:yield] }  #find?
+    Self.all.sort {|name| if name = do 
+      puts name }  #find?
   end
 
   def self.article_titles
-    Article_magazine = 0
-    {|article| if Article_magazine == Article.magazine do 
-      Article.magazine += magazine.all }
+    magazine.all = @@all
+    {|article| if Article_magazine = Article.magazine do 
+      Article.magazine += magazine.all 
+    elseif puts "#{magazine.all}"}
+  end
+
+  def self.contributing_articles
+
   end
 
 end
