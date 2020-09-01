@@ -49,32 +49,32 @@ Some of the methods listed are provided to you in the starter code. You should c
 #### Author
 
 - `Author#initialize(name)`
-  - An author is initialized with a name, as a string. ** :name
-  - A name **cannot** be changed after it is initialized. **attr_reader
+  - An author is initialized with a name, as a string. ** :name done
+  - A name **cannot** be changed after it is initialized. **attr_reader done
 - `Author#name`
-  - Returns the name of the author **@name
+  - Returns the name of the author **@name done
 
 #### Magazine
 
 - `Magazine#initialize(name, category)`
   - A magazine is initialized with a name as a string and a category as a string
-  - The name and category of the magazine **can be** changed after being initialized. **attr_accessor :name, :category
+  - The name and category of the magazine **can be** changed after being initialized. **attr_accessor :name, :category done
 - `Magazine#name`
-  - Returns the name of this magazine  ** @name=name
+  - Returns the name of this magazine  ** @name=name done
 - `Magazine#category`
-  - Returns the category of this magazine ** @category=category
+  - Returns the category of this magazine ** @category=category done
 - `Magazine.all`
-  - Returns an array of all Magazine instances ** @@all << self
+  - Returns an array of all Magazine instances ** @@all << self done
 
 #### Article
 
 - `Article#initialize(author, magazine, title)`
-  - An article is initialized with an author as an Author object, a magazine as a Magazine object, and title as a string.
+  - An article is initialized with an author as an Author object, a magazine as a Magazine object, and title as a string. ** done
   - An article **cannot** change its author, magazine, or title after it is has been initialized.
 - `Article#title`
-  - Returns the title for that given article
+  - Returns the title for that given article  ** done
 - `Article.all`
-  - Returns an array of all Article instances
+  - Returns an array of all Article instances ** done
 
 ### Object Relationship Methods
 
