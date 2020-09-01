@@ -32,12 +32,12 @@ class Magazine
     contributors.each { |article| total += article.title }
   end
 
-  # def contributing_authors
-  #   count = 0
-  #   num_articles = 0
-  #   all.select { |articles| articles }
+  def contributing_authors
+    count = 0
+    num_articles = 0
+    all.select { |articles| articles }
 
-  # end
+  end
 
 
 
