@@ -36,7 +36,6 @@ class Magazine
 
     def author_count
         self.articles.map {|article| article.author}.each_with_object(Hash.new(0)) {|count, author| author[count] += 1}
-        #self.articles.select {|article| article.author == author_name}.count
     end
     
 end
