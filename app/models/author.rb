@@ -13,9 +13,11 @@ class Author
     Articles.all.select{|article| article.author == self}
   end
 
-  # come back to this
+  # come back to this - I'm not sure if this is the right way to access, but 
+    # essentially using articles, I'm trying to find all the magazines and see if that author
+      # is self
   def magazine
-    Articles.all.select{|article| article.author == self}.map{|magazine| magazine.author == self}.uniq
+    self.articles.select{|magazine| magazine.author == self}.uniq
   end
 
   # come back to this
