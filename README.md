@@ -46,15 +46,15 @@ Some of the methods listed are provided to you in the starter code. You should c
 
 #### Author
 
-- `Author#initialize(name)`
+<!-- - `Author#initialize(name)`
   - An author is initialized with a name, as a string.
   - A name **cannot** be changed after it is initialized.
 - `Author#name`
-  - Returns the name of the author
+  - Returns the name of the author -->
 
 #### Magazine
 
-- `Magazine#initialize(name, category)`
+<!-- - `Magazine#initialize(name, category)`
   - A magazine is initialized with a name as a string and a category as a string
   - The name and category of the magazine **can be** changed after being initialized.
 - `Magazine#name`
@@ -62,7 +62,7 @@ Some of the methods listed are provided to you in the starter code. You should c
 - `Magazine#category`
   - Returns the category of this magazine
 - `Magazine.all`
-  - Returns an array of all Magazine instances
+  - Returns an array of all Magazine instances -->
 
 #### Article
 
