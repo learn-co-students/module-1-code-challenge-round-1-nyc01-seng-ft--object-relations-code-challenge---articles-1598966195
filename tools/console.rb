@@ -24,12 +24,6 @@ a3 = Article.new(sean, m3, "Rhythm of a Nation")
 a4 = Article.new(brandy, m4, "Have You Ever")
 a5 = Article.new(caryn, m2, "Organic Designs")
 
-
-
-
-
-
-
 ### DO NOT REMOVE THIS
 binding.pry
 

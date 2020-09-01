@@ -1,6 +1,6 @@
 class Magazine
 
-  attr_accessor :name, :category
+  attr_accessor :name, :category, :article
 
   @@all = []
 
@@ -15,6 +15,13 @@ class Magazine
   def self.all
     @@all
   end
+
+  def contributors
+    Article.all.select { |author| author.magazine == self}
+
+  end
+
+
 
 
 end

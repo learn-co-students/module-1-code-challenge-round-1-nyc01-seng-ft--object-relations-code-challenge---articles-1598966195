@@ -1,5 +1,6 @@
 class Author
-  attr_reader :name, :magazine
+  attr_reader :name, :article
+  
 
   @@all =[]
 
@@ -13,12 +14,19 @@ class Author
     @@all
   end
 
+
   def articles
-    Magazine.all.select { |article| article.author == self }
+    Article.all.select { |article| article.author == self }
   end
 
-  # def magazines
-  #   articles.map { |article| article}
-  # end
+  def magazines 
+    articles.map { |article| article.magazine }.uniq
+  end
+
+  def add_article(magazine, title)
+    Article.new(self, magazine, title)
+  end
+
+  
 
 end
