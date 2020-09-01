@@ -19,9 +19,15 @@ class Magazine
   end
 
   def contributors
-    self.article.map {|con| con.author}
+    self.articles.select {|con| con.author}
   end
 
+  def self.find_by_name(name)
+    self.magazine.select {|mag_name| mag_name.find}
+  end
 
+  def article_titles
+    self.magazine.select {|title| title.magazine.name}
+  end
 
 end
