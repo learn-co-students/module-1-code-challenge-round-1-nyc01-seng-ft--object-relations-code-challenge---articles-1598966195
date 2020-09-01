@@ -33,5 +33,10 @@ class Article
         # Article.all.map { |magazine| magazine.author}
     end
 
+    def add_article(magazine, title)
+        # Given a magazine (as Magazine instance) and a title (as a string), 
+        # creates a new Article instance and associates it with that author and that magazine.
+    end
+
 
 end
