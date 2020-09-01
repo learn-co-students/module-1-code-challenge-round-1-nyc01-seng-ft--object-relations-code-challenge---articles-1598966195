@@ -68,42 +68,42 @@ Some of the methods listed are provided to you in the starter code. You should c
 
 #### Article
 
-- `Article#initialize(author, magazine, title)`
+- `Article#initialize(author, magazine, title)` # DONE
   - An article is initialized with an author as an Author object, a magazine as a Magazine object, and title as a string.
   - An article **cannot** change its author, magazine, or title after it is has been initialized.
-- `Article#title`
+- `Article#title` # DONE
   - Returns the title for that given article
-- `Article.all`
+- `Article.all` # DONE
   - Returns an array of all Article instances
 
 ### Object Relationship Methods
 
 #### Article
 
-- `Article#author`
+- `Article#author` # DONE
   - Returns the author for that given article
-- `Article#magazine`
+- `Article#magazine` # DONE
   - Returns the magazine for that given article
 
 #### Author
 
-- `Author#articles`
+- `Author#articles` # DONE
   - Returns an array of Article instances the author has written
-- `Author#magazines`
+- `Author#magazines` # DONE
   - Returns a **unique** array of Magazine instances for which the author has contributed to
 
 #### Magazine
 
-- `Magazine#contributors`
+- `Magazine#contributors` # DONE
   - Returns an array of Author instances who have written for this magazine
 
 ### Associations and Aggregate Methods
 
 #### Author
 
-- `Author#add_article(magazine, title)`
+- `Author#add_article(magazine, title)` # DONE
   - Given a magazine (as Magazine instance) and a title (as a string), creates a new Article instance and associates it with that author and that magazine.
-- `Author#topic_areas`
+- `Author#topic_areas` # DONE
   - Returns a **unique** array of strings with the categories of the magazines the author has contributed to
 
 #### Magazine
