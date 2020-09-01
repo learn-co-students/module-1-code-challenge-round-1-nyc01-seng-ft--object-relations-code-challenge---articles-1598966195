@@ -41,12 +41,8 @@ class Magazine
       #to get from magazine to authors - we need to map through article (we have that with def contributors method (articles.map {|article| article.author})
       #select the authors that have written more than 2 articles
   def contributing_authors
-    #self.find_all {|article| article.contributors > 2}
-    articles.map {|article| article.author}.find_all {|article| article.count > 2}
+    contributors.find_all {|article| article.count > 2}
   end 
-
-
-    # a.find_all { |e| a.count(e) > 1 }
 
 
    
