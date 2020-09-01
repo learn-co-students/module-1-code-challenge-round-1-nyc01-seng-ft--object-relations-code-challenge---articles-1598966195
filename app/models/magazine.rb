@@ -1,28 +1,28 @@
 # Done
-# - `Magazine#initialize(name, category)`
-#   - A magazine is initialized with a name as a string and a category as a string
-#   - The name and category of the magazine **can be** changed after being initialized.
-# - `Magazine#name`
-#   - Returns the name of this magazine
-# - `Magazine#category`
-#   - Returns the category of this magazine
-# - `Magazine.all`
-#   - Returns an array of all Magazine instances
+# X- `Magazine#initialize(name, category)`
+# X  - A magazine is initialized with a name as a string and a category as a string
+# X  - The name and category of the magazine **can be** changed after being initialized.
+# X- `Magazine#name`
+# X  - Returns the name of this magazine
+# X- `Magazine#category`
+# X  - Returns the category of this magazine
+# X- `Magazine.all`
+# X  - Returns an array of all Magazine instances
 
 
 # #### Magazine- done
 
-# - `Magazine#contributors`
-#   - Returns an array of Author instances who have written for this magazine
+# X- `Magazine#contributors`
+# X  - Returns an array of Author instances who have written for this magazine
 
 # #### Magazine
 
-# - `Magazine.find_by_name(name)`
-#   - Given a string of magazine's name, this method returns the first magazine object that matches
-# - `Magazine#article_titles`
-#   - Returns an array strings of the titles of all articles written for that magazine ????
-# - `Magazine#contributing_authors`
-#   - Returns an array of authors who have written more than 2 articles for the magazine
+# X- `Magazine.find_by_name(name)`
+# X  - Given a string of magazine's name, this method returns the first magazine object that matches
+# X- `Magazine#article_titles`
+# X  - Returns an array strings of the titles of all articles written for that magazine ????
+# X- `Magazine#contributing_authors`
+# X  - Returns an array of authors who have written more than 2 articles for the magazine
 
 class Magazine
   attr_accessor :name, :category
@@ -41,7 +41,7 @@ class Magazine
     @@all
   end
 
-  #helper method 
+  #helper method
   def articles
     Article.all.select { |article| article.magazine == self }
   end
