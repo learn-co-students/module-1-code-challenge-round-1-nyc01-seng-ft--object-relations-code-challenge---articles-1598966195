@@ -27,6 +27,7 @@ class Magazine
 
   def contributors
     # Returns an array of Author instances who have written for this magazine
+    p "Here are all of our contributors:"
     Article.all.select {|article| article.magazine == self}.map {|article| article.author}.uniq
   end
 
