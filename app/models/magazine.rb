@@ -17,8 +17,21 @@ class Magazine
     Article.all.select{|article| article.magazine == self}
   end
 
-  def contirbutors
-    self.articles.map{|article| article.author}.uniq
+  def contributors
+    self.articles.map{|article| article.author}
   end
+
+  def self.find_by_name(name)
+    self.all.find{|magazine| name == self.name}
+  end
+
+  def article_titles
+    self.articles.map{|article| article.title}
+  end
+
+  def contributing_authors
+    self.contributors.detect{|author| self.contributors.count(author) > 2}
+  end
+
 
 end
