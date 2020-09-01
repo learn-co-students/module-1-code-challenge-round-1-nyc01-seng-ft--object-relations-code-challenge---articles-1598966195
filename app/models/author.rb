@@ -26,4 +26,16 @@ class Author
     def add_article(magazine, title)
         Article.new(self, magazine, title)
     end
+
+    def article_count
+        self.articles.count
+    end
+
+    def find_articles_by_mag(magazine_name) #magazine_name must be object, not string
+        self.articles.select {|article| article.magazine == magazine_name}
+    end
+
+    def article_count_by_mag(magazine_name)
+
+    end
 end
