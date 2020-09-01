@@ -1,5 +1,7 @@
 # Object Relations Code Challenge - Articles
 
+Alex Sahli
+
 For this assignment, you will be working with a Magazine domain.
 
 We have three models: `Author`, `Article`, and `Magazine`.
@@ -47,22 +49,22 @@ Some of the methods listed are provided to you in the starter code. You should c
 #### Author
 
 - `Author#initialize(name)`
-  - An author is initialized with a name, as a string.
-  - A name **cannot** be changed after it is initialized.
+  - An author is initialized with a name, as a string. ** :name
+  - A name **cannot** be changed after it is initialized. **attr_reader
 - `Author#name`
-  - Returns the name of the author
+  - Returns the name of the author **@name
 
 #### Magazine
 
 - `Magazine#initialize(name, category)`
   - A magazine is initialized with a name as a string and a category as a string
-  - The name and category of the magazine **can be** changed after being initialized.
+  - The name and category of the magazine **can be** changed after being initialized. **attr_accessor :name, :category
 - `Magazine#name`
-  - Returns the name of this magazine
+  - Returns the name of this magazine  ** @name=name
 - `Magazine#category`
-  - Returns the category of this magazine
+  - Returns the category of this magazine ** @category=category
 - `Magazine.all`
-  - Returns an array of all Magazine instances
+  - Returns an array of all Magazine instances ** @@all << self
 
 #### Article
 
