@@ -1,4 +1,5 @@
 # Object Relations Code Challenge - Articles
+Mahdi Hawary
 
 For this assignment, you will be working with a Magazine domain.
 
