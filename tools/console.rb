@@ -13,6 +13,7 @@ end
 mag1 = Magazine.new("Vogue", "Fashion")
 mag2 = Magazine.new("Elle", "Celeb Drama")
 mag3 = Magazine.new("Cosmo", "Beauty")
+mag4 = Magazine.new("Vogue", "More Fashion")
 
 #Tests for Author 
 
@@ -25,6 +26,7 @@ aut3 = Author.new("Conrad")
 art1 = Article.new(aut1, mag1, "TitleA")
 art2 = Article.new(aut2, mag2, "TitleB")
 art3 = Article.new(aut3, mag3, "TitleC")
+art1 = Article.new(aut1, mag1, "TitleB")
 
 
 
