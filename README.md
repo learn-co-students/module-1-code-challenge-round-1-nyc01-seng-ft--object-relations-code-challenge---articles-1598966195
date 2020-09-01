@@ -81,21 +81,21 @@ Some of the methods listed are provided to you in the starter code. You should c
 #### Article
 
 - `Article#author`
-  - Returns the author for that given article
+  - Returns the author for that given article ** done
 - `Article#magazine`
-  - Returns the magazine for that given article
+  - Returns the magazine for that given article ** done
 
 #### Author
 
 - `Author#articles`
-  - Returns an array of Article instances the author has written
+  - Returns an array of Article instances the author has written ** done
 - `Author#magazines`
-  - Returns a **unique** array of Magazine instances for which the author has contributed to
+  - Returns a **unique** array of Magazine instances for which the author has contributed to ** done
 
 #### Magazine
 
 - `Magazine#contributors`
-  - Returns an array of Author instances who have written for this magazine
+  - Returns an array of Author instances who have written for this magazine  ** done
 
 ### Associations and Aggregate Methods
 

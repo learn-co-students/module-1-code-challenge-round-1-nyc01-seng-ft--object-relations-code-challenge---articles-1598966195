@@ -12,4 +12,12 @@ class Magazine
     @@all
   end
 
+  def articles
+    Article.all.select{|article|article.magazine == self} ##wrote this so magazines can recognize their articles
+  end
+
+  def contributors
+    articles.map{|article|article.author}
+  end
+
 end
