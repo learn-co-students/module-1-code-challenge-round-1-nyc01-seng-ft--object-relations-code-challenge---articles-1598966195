@@ -17,7 +17,20 @@ class Magazine
   end
 
   def contributors
-    articles.map{|article|article.author}
+    articles.map{|article|article.author}.uniq
+  end
+
+  def article_titles
+    articles.map{|article|article.title}
+  end
+
+  def contributing_authors
+    catalog = articles.map{|article|article.author}
+    
+  end
+
+  def self.find_by_name(name)
+    self.all.find{|mag|mag.name == name}
   end
 
 end
